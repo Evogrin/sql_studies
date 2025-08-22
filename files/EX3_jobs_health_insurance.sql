@@ -11,5 +11,4 @@ INNER JOIN company_dim AS c
     on j.company_id = c.company_id
 WHERE j.job_health_insurance = true
   AND EXTRACT(YEAR FROM j.job_posted_date) = 2023
-  AND EXTRACT(QUARTER FROM j.job_posted_date) = 2;
-LIMIT 100
+  AND EXTRACT(QUARTER FROM j.job_posted_date) = 2
